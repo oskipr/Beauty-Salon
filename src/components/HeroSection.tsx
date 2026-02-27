@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-salon.jpg";
 
 const CALENDLY_URL = "https://calendly.com/oscar-arctechsolution/30min";
-const WHATSAPP_PHONE = "17874778118";
+const WHATSAPP_PHONE = "17873992347";
 const WHATSAPP_MESSAGE = encodeURIComponent(
   "Hola, me gustaría agendar una cita en Beauty Salon PR"
 );

@@ -25,11 +25,11 @@ const Footer = () => {
               <p>Calle Fortaleza 104</p>
               <p>Viejo San Juan, San Juan, PR 00901</p>
               <a
-                href="tel:+17874778118"
+                href="tel:+17873992347"
                 className="flex items-center gap-2 hover:text-background transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                +1 787 477 8118
+                +1 787 399 2347
               </a>
             </div>
           </div>
@@ -44,13 +44,13 @@ const Footer = () => {
               <p>Sábados: 10:00 - 18:00</p>
             </div>
             <a
-              href="https://instagram.com/beautysalonpr"
+              href="https://instagram.com/arctechsolution"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-background/60 hover:text-background transition-colors text-sm"
             >
               <Instagram className="w-5 h-5" />
-              @beautysalonpr
+              @arctechsolution
             </a>
           </div>
         </div>

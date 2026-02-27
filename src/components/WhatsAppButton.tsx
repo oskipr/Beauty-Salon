@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 
 const WhatsAppButton = () => {
-  const phoneNumber = "17874778118";
+  const phoneNumber = "17873992347";
   const message = encodeURIComponent(
     "Hola, me gustaría agendar una cita en Beauty Salon PR"
   );
