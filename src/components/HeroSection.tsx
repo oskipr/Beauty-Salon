@@ -4,6 +4,10 @@ import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-salon.jpg";
 
 const CALENDLY_URL = "https://calendly.com/oscar-arctechsolution/30min";
+const WHATSAPP_PHONE = "17874778118";
+const WHATSAPP_MESSAGE = encodeURIComponent(
+  "Hola, me gustaría agendar una cita en The House Salon"
+);
 
 const HeroSection = () => {
   const openCalendly = () => {
@@ -12,6 +16,11 @@ const HeroSection = () => {
     } else {
       window.open(CALENDLY_URL, "_blank", "noopener,noreferrer");
     }
+  };
+
+  const openWhatsApp = () => {
+    const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${WHATSAPP_MESSAGE}`;
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -84,6 +93,7 @@ const HeroSection = () => {
               variant="outline"
               size="lg"
               className="border-foreground/30 text-foreground hover:bg-foreground/5 font-sans text-sm tracking-wide px-8 py-6"
+              onClick={openWhatsApp}
             >
               <MessageCircle className="mr-2 h-4 w-4" />
               WhatsApp
