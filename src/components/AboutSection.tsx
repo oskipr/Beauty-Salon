@@ -27,7 +27,7 @@ const AboutSection = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground font-sans font-light leading-relaxed mb-6">
-            En Kosmo Salon creemos que cada cliente es único. Nuestro equipo de 
+            En The House Salon creemos que cada cliente es único. Nuestro equipo de 
             estilistas expertos combina técnica impecable con atención personalizada, 
             creando experiencias que van más allá de un simple corte de cabello.
           </p>

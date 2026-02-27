@@ -3,7 +3,17 @@ import { Calendar, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-salon.jpg";
 
+const CALENDLY_URL = "https://calendly.com/oscar-arctechsolution/30min";
+
 const HeroSection = () => {
+  const openCalendly = () => {
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({ url: CALENDLY_URL });
+    } else {
+      window.open(CALENDLY_URL, "_blank", "noopener,noreferrer");
+    }
+  };
+
   return (
     <section
       id="inicio"
@@ -13,7 +23,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Kosmo Salon - Interior moderno"
+          alt="The House Salon - Interior moderno"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/20 to-background/80" />
@@ -53,7 +63,7 @@ const HeroSection = () => {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-lg md:text-xl text-muted-foreground font-sans font-light max-w-xl mx-auto mb-10"
           >
-            Agenda tu cita fácilmente y vive la experiencia Kosmo
+            Agenda tu cita fácilmente y vive la experiencia The House Salon
           </motion.p>
 
           <motion.div
@@ -65,6 +75,7 @@ const HeroSection = () => {
             <Button
               size="lg"
               className="bg-foreground text-background hover:bg-foreground/90 font-sans text-sm tracking-wide px-8 py-6"
+              onClick={openCalendly}
             >
               <Calendar className="mr-2 h-4 w-4" />
               Agendar cita

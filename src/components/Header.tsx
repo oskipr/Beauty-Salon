@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import thsLogo from "@/assets/ths-logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,20 +24,21 @@ const Header = () => {
   ];
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-sm"
-          : "bg-transparent"
-      }`}
-    >
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background shadow-sm">
       <nav className="container-narrow mx-auto px-6 py-4 md:py-5">
         <div className="flex items-center justify-between">
           <a
             href="#inicio"
-            className="font-serif text-2xl md:text-3xl tracking-wide text-foreground"
+            className="flex items-center gap-3 text-foreground"
           >
-            Kosmo
+            <img
+              src={thsLogo}
+              alt="The House Salon logo"
+              className="h-12 w-auto object-contain"
+            />
+            <span className="font-serif text-2xl md:text-3xl tracking-wide">
+              The House Salon
+            </span>
           </a>
 
           {/* Desktop Navigation */}

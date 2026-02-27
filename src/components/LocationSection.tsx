@@ -35,14 +35,14 @@ const LocationSection = () => {
             className="aspect-square md:aspect-[4/3] rounded-sm overflow-hidden bg-secondary"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.661789475395!2d-99.1685548!3d19.4267616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sCiudad%20de%20M%C3%A9xico%2C%20CDMX%2C%20Mexico!5e0!3m2!1sen!2sus!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.389755!2d-66.1077!3d18.466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c036f6a8b63d0a1%3A0x9e0e8b3c3d4e5f6a!2sOld%20San%20Juan%2C%20San%20Juan%2C%2000901%2C%20Puerto%20Rico!5e0!3m2!1sen!2sus!4v1234567890"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Ubicación de Kosmo Salon"
+              title="Ubicación de The House Salon"
               className="grayscale hover:grayscale-0 transition-all duration-500"
             />
           </motion.div>
@@ -61,9 +61,9 @@ const LocationSection = () => {
               <div>
                 <h3 className="font-serif text-xl text-foreground mb-2">Dirección</h3>
                 <p className="text-muted-foreground font-sans font-light">
-                  Av. Reforma 123, Col. Centro
+                  Calle Fortaleza 104
                   <br />
-                  Ciudad de México, CP 06000
+                  Viejo San Juan, San Juan, PR 00901
                 </p>
               </div>
             </div>

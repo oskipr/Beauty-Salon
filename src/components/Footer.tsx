@@ -1,4 +1,5 @@
 import { Instagram, Phone } from "lucide-react";
+import thsLogo from "@/assets/ths-logo.png";
 
 const Footer = () => {
   return (
@@ -6,11 +7,18 @@ const Footer = () => {
       <div className="container-narrow mx-auto">
         <div className="grid md:grid-cols-3 gap-10 md:gap-8 mb-12">
           {/* Brand */}
-          <div>
-            <h3 className="font-serif text-2xl mb-4">Kosmo Salon</h3>
-            <p className="text-background/60 font-sans font-light text-sm leading-relaxed">
-              Hair salon moderno enfocado en estilo, precisión y experiencia.
-            </p>
+          <div className="space-y-4">
+            <img
+              src={thsLogo}
+              alt="The House Salon logo"
+              className="h-12 w-auto object-contain"
+            />
+            <div>
+              <h3 className="font-serif text-2xl mb-2">The House Salon</h3>
+              <p className="text-background/60 font-sans font-light text-sm leading-relaxed">
+                Hair salon moderno enfocado en estilo, precisión y experiencia.
+              </p>
+            </div>
           </div>
 
           {/* Contact */}
@@ -19,14 +27,14 @@ const Footer = () => {
               Contacto
             </h4>
             <div className="space-y-2 text-background/60 font-sans font-light text-sm">
-              <p>Av. Reforma 123, Col. Centro</p>
-              <p>Ciudad de México, CP 06000</p>
+              <p>Calle Fortaleza 104</p>
+              <p>Viejo San Juan, San Juan, PR 00901</p>
               <a
-                href="tel:+525512345678"
+                href="tel:+17874778118"
                 className="flex items-center gap-2 hover:text-background transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                +52 55 1234 5678
+                +1 787 477 8118
               </a>
             </div>
           </div>
@@ -41,13 +49,13 @@ const Footer = () => {
               <p>Sábados: 10:00 - 18:00</p>
             </div>
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/thehousesalonbydely"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-background/60 hover:text-background transition-colors text-sm"
             >
               <Instagram className="w-5 h-5" />
-              @kosmosalon
+              @thehousesalonbydely
             </a>
           </div>
         </div>
@@ -55,7 +63,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-background/10 pt-8">
           <p className="text-center text-background/40 font-sans text-xs tracking-wide">
-            © {new Date().getFullYear()} Kosmo Salon. Todos los derechos reservados.
+            © {new Date().getFullYear()} The House Salon. Todos los derechos reservados.
           </p>
         </div>
       </div>
