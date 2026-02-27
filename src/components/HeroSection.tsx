@@ -8,6 +8,7 @@ const WHATSAPP_PHONE = "17874778118";
 const WHATSAPP_MESSAGE = encodeURIComponent(
   "Hola, me gustaría agendar una cita en The House Salon"
 );
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}?text=${WHATSAPP_MESSAGE}`;
 
 const HeroSection = () => {
   const openCalendly = () => {
@@ -16,11 +17,6 @@ const HeroSection = () => {
     } else {
       window.open(CALENDLY_URL, "_blank", "noopener,noreferrer");
     }
-  };
-
-  const openWhatsApp = () => {
-    const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${WHATSAPP_MESSAGE}`;
-    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -89,15 +85,15 @@ const HeroSection = () => {
               <Calendar className="mr-2 h-4 w-4" />
               Agendar cita
             </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-foreground/30 text-foreground hover:bg-foreground/5 font-sans text-sm tracking-wide px-8 py-6"
-              onClick={openWhatsApp}
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border bg-background hover:text-accent-foreground h-11 rounded-md border-foreground/30 text-foreground hover:bg-foreground/5 font-sans text-sm tracking-wide px-8 py-6"
             >
               <MessageCircle className="mr-2 h-4 w-4" />
               WhatsApp
-            </Button>
+            </a>
           </motion.div>
         </motion.div>
       </div>
